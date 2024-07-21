@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: ' https://disaster-psi.vercel.app/',
+    origin: '*',
     methods: ['GET', 'POST'],
 }));
 app.use(bodyParser.json());
